@@ -11,6 +11,7 @@
     <a href="https://chartjs-slack.herokuapp.com/"><img src="https://img.shields.io/badge/slack-chartjs-blue.svg?style=flat-square&maxAge=3600" alt="Slack"></a>
 </p>
 
+
 ## Documentation
 
 - [Introduction](https://www.chartjs.org/docs/latest/)

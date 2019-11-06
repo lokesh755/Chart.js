@@ -34,12 +34,12 @@ jobs:
           echo "::set-env name=BROWSERS::--browsers chrome"
         fi
       shell: bash
-    - name: Build and Test
+    - name: Build 
       run: |
         npm install
         gulp build
-        gulp test --coverage ${BROWSERS}
-      #  gulp docs
+    - name: Test
+      run: gulp test --coverage ${BROWSERS}
     - name: Package
       run: |
         gulp docs

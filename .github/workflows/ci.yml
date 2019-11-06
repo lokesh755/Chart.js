@@ -38,7 +38,8 @@ jobs:
       run: |
         npm install
         gulp build
-        gulp test --coverage ${BROWSERS}
+        gulp test --coverage
+        gulp docs
     - name: Package
       run: |
         gulp docs

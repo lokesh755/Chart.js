@@ -35,6 +35,8 @@ gulp.task('module-sizes', moduleSizesTask);
 gulp.task('size', gulp.parallel('library-size', 'module-sizes'));
 gulp.task('default', gulp.parallel('build'));
 
+gulp.on('stop', () => { process.exit(0); });
+
 function run(bin, args, done) {
   return new Promise(function(resolve, reject) {
     var exe = '"' + process.execPath + '"';
